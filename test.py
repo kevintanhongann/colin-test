@@ -37,7 +37,7 @@ for year in [2022, 2023, 2024]:
             ax.set_xlabel('')
             ax.set_ylabel('Percentage Change')
             # Save the figure
-            plt.savefig(f'Percentage_Change_{year}.png', dpi=300, bbox_inches='tight')
+            # plt.savefig(f'Percentage_Change_{year}.png', dpi=300, bbox_inches='tight')
             plt.show()
         else:
             print(f"No data available for {year}")
@@ -48,5 +48,5 @@ for year in [2022, 2023, 2024]:
 # Plot trend over time
 df.resample('A').last().plot(title='Trend Over Time')
 plt.ylabel('Exchange Rate')
-plt.savefig('Trend_Over_Time.png', dpi=300, bbox_inches='tight')
+# plt.savefig('Trend_Over_Time.png', dpi=300, bbox_inches='tight')
 plt.show()
