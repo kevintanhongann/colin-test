@@ -26,7 +26,7 @@ plt.rcParams.update({'font.size': 11})  # Adjust font size as needed
 plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
 
 # Plot separate charts for each year if data is available and save as PNG
-for year in [2022, 2023, 2024]:
+for year in annual_data.index.year:
     # Check if 'year' is in the index's year
     if year in annual_data.index.year:
         # Select data for the specific 'year'
